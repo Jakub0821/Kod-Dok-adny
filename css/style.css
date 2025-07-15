@@ -154,3 +154,63 @@ footer {
     margin-top: 40px;
     font-size: 0.9rem;
 }
+
+/* Tablety i mniejsze ekrany */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1.1rem;
+  }
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav li {
+    margin: 8px 10px;
+  }
+}
+
+/* Telefony – ekrany do 768px */
+@media (max-width: 768px) {
+  header {
+    padding: 40px 15px;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li {
+    margin: 8px 0;
+  }
+  .container {
+    width: 95%;
+    margin: 20px auto;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  form {
+    width: 100%;
+  }
+}
+
+/* Bardzo małe telefony – ekrany do 480px */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header p {
+    font-size: 0.9rem;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
