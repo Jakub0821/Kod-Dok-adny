@@ -32,15 +32,34 @@
     </ul>
   </main>
   
-  <section>
-  <h3>Strony wizytówkowe</h3>
-  <p>Proste i przejrzyste strony dla małych firm, które chcą zaznaczyć swoją obecność w sieci.</p>
+  <section class="cennik">
+  <h3>Oblicz wstępną wycenę swojej strony</h3>
+  <form id="priceCalculator">
+    <label for="typStrony">Typ strony:</label>
+    <select id="typStrony">
+      <option value="500">Strona wizytówka (500 zł)</option>
+      <option value="1000">Landing page (1000 zł)</option>
+      <option value="2000">Sklep online (2000 zł)</option>
+    </select>
+
+    <label for="podstrony">Liczba podstron:</label>
+    <input type="number" id="podstrony" min="1" value="1">
+
+    <label>
+      <input type="checkbox" id="formularz"> Formularz kontaktowy (+200 zł)
+    </label>
+
+    <label>
+      <input type="checkbox" id="seo"> Optymalizacja SEO (+300 zł)
+    </label>
+
+    <button type="button" id="obliczBtn" class="btn">Oblicz koszt</button>
+  </form>
+
+  <p id="wynik" class="wynik-cena"></p>
 </section>
 
-<section>
-  <h3>Landing page</h3>
-  <p>Strony stworzone do kampanii marketingowych, skoncentrowane na konwersji i przejrzystości przekazu.</p>
-</section>
+<script src="js/calc.js"></script>
 
 
   <footer>

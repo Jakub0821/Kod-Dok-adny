@@ -274,6 +274,37 @@ section a:hover {
   color: #333;
 }
 
+.cennik {
+  margin: 40px auto;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  max-width: 500px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.cennik label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.cennik select,
+.cennik input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.wynik-cena {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #005a87;
+  font-weight: bold;
+}
+
 /* ====================== */
 /* Responsywność */
 @media (max-width: 1024px) {
